@@ -24,7 +24,7 @@ nav {
   color: #fff;
   text-align: center;
   position: fixed;
-  border-bottom: 1px solid #b1b1b1;
+  /* border-bottom: 1px solid #b1b1b1; */
   line-height: 60px;
   width: 100%;
   transition: background-color 0.5s ease;
@@ -130,10 +130,10 @@ header .overlay {
   width: 30px;
   height: 20px;
 }
-.tombol-menu .garis {
+/* .tombol-menu .garis {
   height: 3px;
   background-color: #fff;
-}
+} */
 section {
   padding: 50px 0px 50px 0px;
 }

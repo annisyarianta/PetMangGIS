@@ -42,13 +42,14 @@ nav.putih {
 nav .logo {
   float: left;
   position: relative;
+  margin-left: -150px;
   line-height: 55px;
   text-align: center;
 }
 
 nav .logo img {
   vertical-align: middle;
-  width: 120px;
+  width: 245px;
 }
 
 nav .menu {
@@ -69,6 +70,7 @@ nav .menu ul li {
   float: left;
   line-height: 60px;
   font-weight: bold;
+  font-size: 30px;
   letter-spacing: 0,9px;
 }
 
@@ -80,7 +82,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  text-decoration: underline;
+  text-shadow: 1px 1px 40px #00ff59;
 }
 
 /* pengaturan header */

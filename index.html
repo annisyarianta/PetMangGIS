@@ -1,203 +1,293 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 	<head>
 		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>PetMangGIS</title>
-		<link rel="icon" href="asset/logo-title.png" type="image/icon">
+		<link rel="icon" href="" type="image/icon" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous" />
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+			rel="stylesheet" />
 		<link rel="stylesheet" href="style.css" />
 	</head>
+
 	<body>
-		<nav>
-			<div class="layar-dalam">
-				<div class="logo">
-					<a href=""
-						><img src="asset/logopet-white.png" class="putih"
-					/></a>
-					<a href=""
-						><img src="asset/logopet-black.png" class="hitam"
-					/></a>
+		<div class="hero-container">
+			<nav class="navbar navbar-expand-lg bg-body-tertiary">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#">
+						<img
+							src="asset/logopet-black.png"
+							alt="Logo PetMangGIS" />
+					</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div
+						class="nav nav-underline justify-content-end"
+						id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bold">
+							<li class="nav-item me-lg-3">
+								<a
+									class="nav-link active"
+									aria-current="page"
+									href="#home"
+									>Home</a
+								>
+							</li>
+							<li class="nav-item me-lg-3">
+								<a class="nav-link" href="#about">About</a>
+							</li>
+							<li class="nav-item me-lg-3">
+								<a class="nav-link" href="#team">Team</a>
+							</li>
+							<li class="nav-item me-lg-3">
+								<a class="nav-link" href="#maps">Maps</a>
+							</li>
+							<li class="nav-item me-lg-5">
+								<a class="nav-link" href="#contact">Contact</a>
+							</li>
+						</ul>
+					</div>
 				</div>
-				<div class="menu">
-					<!-- <a href="#" class="tombol-menu">
-						<span class="garis"></span>
-						<span class="garis"></span>
-						<span class="garis"></span>
-					</a> -->
-					<ul>
-						<li><a href="#home">Home</a></li>
-						<li><a href="#aboutus">About</a></li>
-						<li><a href="#team">Team</a></li>
-						<li><a href="#">Maps</a></li>
-						<li><a href="#blog">Contact</a></li>
-					</ul>
+			</nav>
+
+			<div class="hero-desc">
+				<h1 class="mb-3 fw-bold">Welcome to PetMangGIS!</h1>
+				<p>Petengoran Mangrove GIS</p>
+				<button class="btn btn-tertiary mt-5">More Info</button>
+			</div>
+
+			<video class="hero-video" autoplay muted loop id="home">
+				<source src="asset/video-indonesia.mp4" type="video/mp4" />
+			</video>
+		</div>
+
+		<!-- section 2  -->
+		<div class="feature" id="about">
+			<div class="feature-left">
+				<img
+					src="asset/logo-about.png"
+					alt="Image Feature"
+					class="img-feature desktop-view" />
+			</div>
+			<div class="feature-right">
+				<div class="wrapper-feature-content">
+					<h2>Apa itu PetMangGIS?</h2>
+					<p>
+						PetMangGIS - Petengoran Mangrove GIS - adalah sebuah
+						situs web yang menyediakan informasi tentang hutan
+						mangrove di kawasan Petengoran, Lampung. Situs ini
+						bertujuan untuk meningkatkan kesadaran masyarakat
+						tentang pentingnya hutan mangrove dan mempromosikan
+						upaya pelestariannya.
+					</p>
+					<div class="list-feature">
+						<div class="card-item">
+							<img
+								src="assets/VectorIconSparkle.png"
+								alt="Vector Icon" />
+							<p>
+								Zones Layer : Map of the zones in the Petengoran
+								mangrove forest area, divided into 5 zones.
+							</p>
+						</div>
+						<div class="card-item">
+							<img
+								src="assets/VectorIconSparkle.png"
+								alt="Vector Icon" />
+							<p>
+								Roads Layer : Information on roads and
+								facilities around mangrove forests that are
+								important for accessibility and transportation.
+							</p>
+						</div>
+						<div class="card-item">
+							<img
+								src="assets/VectorIconSparkle.png"
+								alt="Vector Icon" />
+							<p>
+								NDVI Layer : Map of the vegetation cover density
+								in the Petengoran mangrove forest area.
+							</p>
+						</div>
+						<div class="card-item">
+							<img
+								src="assets/VectorIconSparkle.png"
+								alt="Vector Icon" />
+							<p>
+								Number of Mangrove Trees Layer : Data on the
+								number of mangrove trees in the Petengoran
+								mangrove forest area.
+							</p>
+						</div>
+					</div>
 				</div>
 			</div>
-		</nav>
-		<div class="layar-penuh">
-			<header id="home">
-				<div class="overlay"></div>
-				<video autoplay muted loop>
-					<source src="asset/video-indonesia.mp4" type="video/mp4" />
-				</video>
-				<div class="intro">
-					<h3>Welcome to PetMangGIS!</h3>
-					<p>Petengoran Mangrove GIS</p>
+		</div>
+
+		<!-- section 3 -->
+		<div class="explore" id="team">
+			<div class="explore-content text-center">
+				<h2 class="fw-bold">Our Team</h2>
+				<p class="mt-3">
+					Lorem Ipsum is simply dummy text of the printing and
+					typesetting industry. Lorem Ipsum has been the
+				</p>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 mb-3">
+							<div class="card h-100">
+								<div class="row g-0">
+									<div class="col-md-4">
+										<img
+											src="asset/annisya-photo.jpg"
+											class="img-fluid rounded-start"
+											alt="Annisya" />
+									</div>
+									<div class="col-md-8">
+										<div class="card-body">
+											<h5 class="card-title">
+												Card title
+											</h5>
+											<p class="card-text">
+												This is a wider card with
+												supporting text below as a
+												natural lead-in to additional
+												content. This content is a
+												little bit longer.
+											</p>
+											<p class="card-text">
+												<small
+													class="text-body-secondary"
+													>Last updated 3 mins
+													ago</small
+												>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 mb-3">
+							<div class="card h-100">
+								<div class="row g-0">
+									<div class="col-md-4">
+										<img
+											src="asset/reginia-photo.jpg"
+											class="img-fluid rounded-start"
+											alt="Reginia" />
+									</div>
+									<div class="col-md-8">
+										<div class="card-body">
+											<h5 class="card-title">
+												Card title
+											</h5>
+											<p class="card-text">
+												This is a wider card with
+												supporting text below as a
+												natural lead-in to additional
+												content. This content is a
+												little bit longer.
+											</p>
+											<p class="card-text">
+												<small
+													class="text-body-secondary"
+													>Last updated 3 mins
+													ago</small
+												>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Contact Section -->
+		<div class="container mt-5" id="contact">
+			<div class="row justify-content-center">
+				<div class="col-lg-6">
+					<div class="contact-form">
+						<h2 class="text-center mb-4 fw-bold">Contact Us</h2>
+						<form>
+							<label for="message" class="form-label"
+								>Email Address</label
+							>
+							<div class="mb-3 input-group">
+								<span class="input-group-text"
+									><i class="fas fa-envelope"></i
+								></span>
+								<input
+									type="email"
+									class="form-control"
+									id="email"
+									placeholder="Enter your email"
+									required />
+							</div>
+							<label for="message" class="form-label">Name</label>
+							<div class="mb-3 input-group">
+								<span class="input-group-text"
+									><i class="fas fa-user"></i
+								></span>
+								<input
+									type="text"
+									class="form-control"
+									id="name"
+									placeholder="Enter your name"
+									required />
+							</div>
+							<div class="mb-3">
+								<label for="message" class="form-label"
+									>Message</label
+								>
+								<textarea
+									class="form-control"
+									id="message"
+									rows="5"
+									placeholder="Enter your message"
+									required></textarea>
+							</div>
+							<button type="submit" class="btn btn-primary">
+								Send Message
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer class="footer text-white">
+			<div class="container">
+				<div class="text-center mt-1">
 					<p>
-						<a href="" class="tombol">More Info</a>
+						&copy; 2024
+						<a href="#" class="text-white fw-bold">PetMangGIS</a>.
+						All Rights Reserved.
 					</p>
 				</div>
-			</header>
-			<main>
-				<section id="aboutus">
-					<div class="layar-dalam">
-						<h3>About Us</h3>
-						<p class="ringkasan">
-							Lorem ipsum dolor sit amet consectetur adipisicing
-							elit. Obcaecati, cupiditate.
-						</p>
-						<div class="konten-isi">
-							<p>
-								Lorem ipsum, dolor sit amet consectetur
-								adipisicing elit. Sit, iure vero soluta
-								exercitationem deleniti possimus cupiditate
-								autem facilis magni illum?
-							</p>
-						</div>
-					</div>
-				</section>
-				<section class="abuabu" id="support">
-					<div class="layar-dalam support">
-						<div>
-							<img src="asset/matahari.png" />
-							<h6>In Every Condition</h6>
-							<p>
-								Lorem, ipsum dolor sit amet consectetur
-								adipisicing elit. Ipsa illum recusandae nostrum.
-								Obcaecati, quos vel.
-							</p>
-						</div>
-						<div>
-							<img src="asset/tas.png" />
-							<h6>Professional Team</h6>
-							<p>
-								Lorem ipsum dolor sit amet consectetur
-								adipisicing elit. Exercitationem, ea voluptatem
-								corporis molestias obcaecati deleniti.
-							</p>
-						</div>
-						<div>
-							<img src="asset/kompas.png" />
-							<h6>Expert Hikers</h6>
-							<p>
-								Lorem ipsum dolor sit amet consectetur
-								adipisicing elit. Exercitationem, ea voluptatem
-								corporis molestias obcaecati deleniti.
-							</p>
-						</div>
-					</div>
-				</section>
-				<!-- <section id="gallery">
-					<div><img src="asset/foto1.jpg" /></div>
-					<div><img src="asset/foto2.jpg" /></div>
-					<div><img src="asset/foto3.jpg" /></div>
-					<div><img src="asset/foto4.jpg" /></div>
-					<div><img src="asset/foto5.jpg" /></div>
-					<div><img src="asset/foto6.jpg" /></div>
-					<div><img src="asset/foto7.jpg" /></div>
-					<div><img src="asset/foto8.jpg" /></div>
-				</section> -->
-				<section class="quote">
-					<div class="layar-dalam">
-						<p>Jogja terbuat dari rindu, pulang dan angkringan.</p>
-					</div>
-				</section>
-				<section id="team">
-					<div class="layar-dalam">
-						<h3>Our Team</h3>
-						<p class="ringkasan">
-							Lorem ipsum dolor sit amet consectetur adipisicing
-							elit. A, laborum!
-						</p>
-						<div class="tim">
-							<div>
-								<img src="asset/annisya-photo.jpg" />
-								<h6>Annisya Rianta Raudatuljannah</h6>
-								<span>2115061008</span>
-							</div>
-							<div>
-								<img src="asset/reginia-photo.jpg" />
-								<h6>Reginia Putri Maharani</h6>
-								<span>2115061004</span>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section class="abuabu" id="blog">
-					<div class="layar-dalam">
-						<h3>Contact Us</h3>
-						<p class="ringkasan">
-							Lorem ipsum dolor sit amet consectetur adipisicing
-							elit. Sequi, fugit.
-						</p>
-						<div class="blog">
-							<div class="area">
-								<div
-									class="gambar"
-									style="
-										background-image: url('asset/blog1.jpg');
-									"></div>
-								<div class="text">
-									<article>
-										<h4>
-											<a href="#">What About Bromo?</a>
-										</h4>
-										<p>
-											Lorem ipsum dolor sit amet
-											consectetur adipisicing elit.
-											Placeat, est omnis? Quas
-											reprehenderit rem nesciunt.
-										</p>
-									</article>
-								</div>
-							</div>
-							<div class="area">
-								<div
-									class="gambar"
-									style="
-										background-image: url('asset/blog2.jpg');
-									"></div>
-								<div class="text">
-									<article>
-										<h4>
-											<a href="#"
-												>What About Yogyakarta?</a
-											>
-										</h4>
-										<p>
-											Lorem ipsum dolor sit amet
-											consectetur adipisicing elit.
-											Placeat, est omnis? Quas
-											reprehenderit rem nesciunt.
-										</p>
-									</article>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-			</main>
-			<footer id="contact">
-				<div class="layar-dalam">
-					<div class="copyright">PetMangGIS &copy; 2024 SIG-A</div>
-				</div>
-			</footer>
-		</div>
+			</div>
+		</footer>
+
 		<script
-			src="https://code.jquery.com/jquery-3.6.0.min.js"
-			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 			crossorigin="anonymous"></script>
-		<script src="javascript.js"></script>
 	</body>
 </html>

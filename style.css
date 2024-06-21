@@ -108,6 +108,10 @@ body {
   margin: 0;
 }
 
+small:hover {
+  font-weight: bold;
+}
+
 .list-feature {
   display: grid;
   gap: 1rem;
@@ -145,6 +149,9 @@ h3 {
   }
   .hero-left {
     padding: 140px 80px;
+  }
+  .nav-underline {
+    margin-left: 700px;
   }
   img.img-feature {
     width: 450px;
